@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="3" ignored="0" total="29" passed="25">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Testing TestNG Features" duration-ms="129" started-at="2021-04-27T07:52:06 IST" finished-at="2021-04-27T07:52:07 IST">
+    <groups>
+      <group name="Title">
+        <method signature="TestNGDiffAnnoWithGroupTestCases.test2()[pri:1, instance:TestNGAnnotations.TestNGDiffAnnoWithGroupTestCases@6ebc05a6]" name="test2" class="TestNGAnnotations.TestNGDiffAnnoWithGroupTestCases"/>
+        <method signature="TestNGDiffAnnoWithGroupTestCases.test3()[pri:3, instance:TestNGAnnotations.TestNGDiffAnnoWithGroupTestCases@6ebc05a6]" name="test3" class="TestNGAnnotations.TestNGDiffAnnoWithGroupTestCases"/>
+      </group> <!-- Title -->
+      <group name="Logo">
+        <method signature="TestNGDiffAnnoWithGroupTestCases.test1()[pri:2, instance:TestNGAnnotations.TestNGDiffAnnoWithGroupTestCases@6ebc05a6]" name="test1" class="TestNGAnnotations.TestNGDiffAnnoWithGroupTestCases"/>
+      </group> <!-- Logo -->
+    </groups>
+    <test name="Regression Suite" duration-ms="129" started-at="2021-04-27T07:52:06 IST" finished-at="2021-04-27T07:52:07 IST">
+      <class name="TestNGAnnotations.TestNGDependsOnMethods">
+        <test-method status="FAIL" signature="logInTest()[pri:0, instance:TestNGAnnotations.TestNGDependsOnMethods@50b494a6]" name="logInTest" duration-ms="5" started-at="2021-04-27T07:52:06 IST" finished-at="2021-04-27T07:52:06 IST">
+          <exception class="java.lang.ArithmeticException">
+            <message>
+              <![CDATA[/ by zero]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ArithmeticException: / by zero
+at TestNGAnnotations.TestNGDependsOnMethods.logInTest(TestNGDependsOnMethods.java:12)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ArithmeticException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logInTest -->
+        <test-method status="SKIP" signature="homePageTest()[pri:0, instance:TestNGAnnotations.TestNGDependsOnMethods@50b494a6]" name="homePageTest" duration-ms="0" started-at="2021-04-27T07:52:06 IST" depends-on-methods="TestNGAnnotations.TestNGDependsOnMethods.logInTest" finished-at="2021-04-27T07:52:06 IST">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TestNGDependsOnMethods.homePageTest()[pri:0, instance:TestNGAnnotations.TestNGDependsOnMethods@50b494a6] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TestNGDependsOnMethods.homePageTest()[pri:0, instance:TestNGAnnotations.TestNGDependsOnMethods@50b494a6] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePageTest -->
+      </class> <!-- TestNGAnnotations.TestNGDependsOnMethods -->
+      <class name="TestNGAnnotations.TestNGInvocationCountTest">
+        <test-method status="PASS" signature="sum()[pri:0, instance:TestNGAnnotations.TestNGInvocationCountTest@32709393]" name="sum" duration-ms="0" started-at="2021-04-27T07:52:07 IST" finished-at="2021-04-27T07:52:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sum -->
+        <test-method status="PASS" signature="sum()[pri:0, instance:TestNGAnnotations.TestNGInvocationCountTest@32709393]" name="sum" duration-ms="0" started-at="2021-04-27T07:52:07 IST" finished-at="2021-04-27T07:52:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sum -->
+        <test-method status="PASS" signature="sum()[pri:0, instance:TestNGAnnotations.TestNGInvocationCountTest@32709393]" name="sum" duration-ms="1" started-at="2021-04-27T07:52:07 IST" finished-at="2021-04-27T07:52:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sum -->
+        <test-method status="PASS" signature="sum()[pri:0, instance:TestNGAnnotations.TestNGInvocationCountTest@32709393]" name="sum" duration-ms="1" started-at="2021-04-27T07:52:07 IST" finished-at="2021-04-27T07:52:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sum -->
+        <test-method status="PASS" signature="sum()[pri:0, instance:TestNGAnnotations.TestNGInvocationCountTest@32709393]" name="sum" duration-ms="1" started-at="2021-04-27T07:52:07 IST" finished-at="2021-04-27T07:52:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sum -->
+        <test-method status="PASS" signature="sum()[pri:0, instance:TestNGAnnotations.TestNGInvocationCountTest@32709393]" name="sum" duration-ms="1" started-at="2021-04-27T07:52:07 IST" finished-at="2021-04-27T07:52:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sum -->
+        <test-method status="PASS" signature="sum()[pri:0, instance:TestNGAnnotations.TestNGInvocationCountTest@32709393]" name="sum" duration-ms="0" started-at="2021-04-27T07:52:07 IST" finished-at="2021-04-27T07:52:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sum -->
+        <test-method status="PASS" signature="sum()[pri:0, instance:TestNGAnnotations.TestNGInvocationCountTest@32709393]" name="sum" duration-ms="1" started-at="2021-04-27T07:52:07 IST" finished-at="2021-04-27T07:52:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sum -->
+        <test-method status="PASS" signature="sum()[pri:0, instance:TestNGAnnotations.TestNGInvocationCountTest@32709393]" name="sum" duration-ms="0" started-at="2021-04-27T07:52:07 IST" finished-at="2021-04-27T07:52:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sum -->
+        <test-method status="PASS" signature="sum()[pri:0, instance:TestNGAnnotations.TestNGInvocationCountTest@32709393]" name="sum" duration-ms="1" started-at="2021-04-27T07:52:07 IST" finished-at="2021-04-27T07:52:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sum -->
+      </class> <!-- TestNGAnnotations.TestNGInvocationCountTest -->
+      <class name="TestNGAnnotations.TestNGExpectedException">
+        <test-method status="FAIL" signature="expectedExceptions()[pri:0, instance:TestNGAnnotations.TestNGExpectedException@3cef309d]" name="expectedExceptions" duration-ms="0" started-at="2021-04-27T07:52:07 IST" finished-at="2021-04-27T07:52:07 IST">
+          <exception class="java.lang.NumberFormatException">
+            <message>
+              <![CDATA[For input string: "abdul"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NumberFormatException: For input string: "abdul"
+at java.lang.NumberFormatException.forInputString(Unknown Source)
+at java.lang.Integer.parseInt(Unknown Source)
+at java.lang.Integer.parseInt(Unknown Source)
+at TestNGAnnotations.TestNGExpectedException.expectedExceptions(TestNGExpectedException.java:13)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NumberFormatException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- expectedExceptions -->
+        <test-method status="PASS" signature="expectedExceptions2()[pri:0, instance:TestNGAnnotations.TestNGExpectedException@3cef309d]" name="expectedExceptions2" duration-ms="1" started-at="2021-04-27T07:52:07 IST" finished-at="2021-04-27T07:52:07 IST">
+          <exception class="java.lang.NumberFormatException">
+            <message>
+              <![CDATA[For input string: "abdul"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NumberFormatException: For input string: "abdul"
+at java.lang.NumberFormatException.forInputString(Unknown Source)
+at java.lang.Integer.parseInt(Unknown Source)
+at java.lang.Integer.parseInt(Unknown Source)
+at TestNGAnnotations.TestNGExpectedException.expectedExceptions2(TestNGExpectedException.java:24)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NumberFormatException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- expectedExceptions2 -->
+      </class> <!-- TestNGAnnotations.TestNGExpectedException -->
+      <class name="TestNGAnnotations.TestNGDiffAnnoWithAsserts">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:TestNGAnnotations.TestNGDiffAnnoWithAsserts@1dfe2924]" name="beforeSuite" is-config="true" duration-ms="1" started-at="2021-04-27T07:52:06 IST" finished-at="2021-04-27T07:52:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:TestNGAnnotations.TestNGDiffAnnoWithAsserts@1dfe2924]" name="beforeTest" is-config="true" duration-ms="0" started-at="2021-04-27T07:52:06 IST" finished-at="2021-04-27T07:52:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:TestNGAnnotations.TestNGDiffAnnoWithAsserts@1dfe2924]" name="beforeClass" is-config="true" duration-ms="0" started-at="2021-04-27T07:52:06 IST" finished-at="2021-04-27T07:52:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:TestNGAnnotations.TestNGDiffAnnoWithAsserts@1dfe2924]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-04-27T07:52:06 IST" finished-at="2021-04-27T07:52:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="test1()[pri:0, instance:TestNGAnnotations.TestNGDiffAnnoWithAsserts@1dfe2924]" name="test1" duration-ms="1" started-at="2021-04-27T07:52:06 IST" finished-at="2021-04-27T07:52:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:TestNGAnnotations.TestNGDiffAnnoWithAsserts@1dfe2924]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-04-27T07:52:06 IST" finished-at="2021-04-27T07:52:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:TestNGAnnotations.TestNGDiffAnnoWithAsserts@1dfe2924]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-04-27T07:52:06 IST" finished-at="2021-04-27T07:52:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="test2()[pri:0, instance:TestNGAnnotations.TestNGDiffAnnoWithAsserts@1dfe2924]" name="test2" duration-ms="1" started-at="2021-04-27T07:52:06 IST" finished-at="2021-04-27T07:52:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:TestNGAnnotations.TestNGDiffAnnoWithAsserts@1dfe2924]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-04-27T07:52:06 IST" finished-at="2021-04-27T07:52:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:TestNGAnnotations.TestNGDiffAnnoWithAsserts@1dfe2924]" name="afterMethod" is-config="true" duration-ms="0" started-at="2021-04-27T07:52:06 IST" finished-at="2021-04-27T07:52:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="test3()[pri:0, instance:TestNGAnnotations.TestNGDiffAnnoWithAsserts@1dfe2924]" name="test3" duration-ms="1" started-at="2021-04-27T07:52:06 IST" finished-at="2021-04-27T07:52:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:TestNGAnnotations.TestNGDiffAnnoWithAsserts@1dfe2924]" name="afterMethod" is-config="true" duration-ms="0" started-at="2021-04-27T07:52:06 IST" finished-at="2021-04-27T07:52:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="test4()[pri:0, instance:TestNGAnnotations.TestNGDiffAnnoWithAsserts@1dfe2924]" name="test4" duration-ms="4" started-at="2021-04-27T07:52:06 IST" finished-at="2021-04-27T07:52:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test4 -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:TestNGAnnotations.TestNGDiffAnnoWithAsserts@1dfe2924]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-04-27T07:52:06 IST" finished-at="2021-04-27T07:52:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:TestNGAnnotations.TestNGDiffAnnoWithAsserts@1dfe2924]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-04-27T07:52:06 IST" finished-at="2021-04-27T07:52:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:TestNGAnnotations.TestNGDiffAnnoWithAsserts@1dfe2924]" name="afterClass" is-config="true" duration-ms="0" started-at="2021-04-27T07:52:06 IST" finished-at="2021-04-27T07:52:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:TestNGAnnotations.TestNGDiffAnnoWithAsserts@1dfe2924]" name="afterTest" is-config="true" duration-ms="1" started-at="2021-04-27T07:52:07 IST" finished-at="2021-04-27T07:52:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:TestNGAnnotations.TestNGDiffAnnoWithAsserts@1dfe2924]" name="afterSuite" is-config="true" duration-ms="1" started-at="2021-04-27T07:52:07 IST" finished-at="2021-04-27T07:52:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- TestNGAnnotations.TestNGDiffAnnoWithAsserts -->
+      <class name="TestNGAnnotations.TestNGDiffAnnoWithPriority">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:TestNGAnnotations.TestNGDiffAnnoWithPriority@6e6c3152]" name="beforeSuite" is-config="true" duration-ms="0" started-at="2021-04-27T07:52:06 IST" finished-at="2021-04-27T07:52:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:TestNGAnnotations.TestNGDiffAnnoWithPriority@6e6c3152]" name="beforeTest" is-config="true" duration-ms="0" started-at="2021-04-27T07:52:06 IST" finished-at="2021-04-27T07:52:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:TestNGAnnotations.TestNGDiffAnnoWithPriority@6e6c3152]" name="beforeClass" is-config="true" duration-ms="0" started-at="2021-04-27T07:52:07 IST" finished-at="2021-04-27T07:52:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:TestNGAnnotations.TestNGDiffAnnoWithPriority@6e6c3152]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-04-27T07:52:07 IST" finished-at="2021-04-27T07:52:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="test2()[pri:1, instance:TestNGAnnotations.TestNGDiffAnnoWithPriority@6e6c3152]" name="test2" duration-ms="0" started-at="2021-04-27T07:52:07 IST" finished-at="2021-04-27T07:52:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:TestNGAnnotations.TestNGDiffAnnoWithPriority@6e6c3152]" name="afterMethod" is-config="true" duration-ms="0" started-at="2021-04-27T07:52:07 IST" finished-at="2021-04-27T07:52:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="test1()[pri:2, instance:TestNGAnnotations.TestNGDiffAnnoWithPriority@6e6c3152]" name="test1" duration-ms="1" started-at="2021-04-27T07:52:07 IST" finished-at="2021-04-27T07:52:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:TestNGAnnotations.TestNGDiffAnnoWithPriority@6e6c3152]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-04-27T07:52:07 IST" finished-at="2021-04-27T07:52:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:TestNGAnnotations.TestNGDiffAnnoWithPriority@6e6c3152]" name="afterMethod" is-config="true" duration-ms="0" started-at="2021-04-27T07:52:07 IST" finished-at="2021-04-27T07:52:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:TestNGAnnotations.TestNGDiffAnnoWithPriority@6e6c3152]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-04-27T07:52:07 IST" finished-at="2021-04-27T07:52:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="test3()[pri:3, instance:TestNGAnnotations.TestNGDiffAnnoWithPriority@6e6c3152]" name="test3" duration-ms="0" started-at="2021-04-27T07:52:07 IST" finished-at="2021-04-27T07:52:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:TestNGAnnotations.TestNGDiffAnnoWithPriority@6e6c3152]" name="afterClass" is-config="true" duration-ms="0" started-at="2021-04-27T07:52:07 IST" finished-at="2021-04-27T07:52:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:TestNGAnnotations.TestNGDiffAnnoWithPriority@6e6c3152]" name="afterMethod" is-config="true" duration-ms="0" started-at="2021-04-27T07:52:07 IST" finished-at="2021-04-27T07:52:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:TestNGAnnotations.TestNGDiffAnnoWithPriority@6e6c3152]" name="afterTest" is-config="true" duration-ms="0" started-at="2021-04-27T07:52:07 IST" finished-at="2021-04-27T07:52:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:TestNGAnnotations.TestNGDiffAnnoWithPriority@6e6c3152]" name="afterSuite" is-config="true" duration-ms="0" started-at="2021-04-27T07:52:07 IST" finished-at="2021-04-27T07:52:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- TestNGAnnotations.TestNGDiffAnnoWithPriority -->
+      <class name="TestNGAnnotations.TestNGInvocationTimeOutTest">
+        <test-method status="FAIL" signature="infiniteLoopTest()[pri:0, instance:TestNGAnnotations.TestNGInvocationTimeOutTest@3d99d22e]" name="infiniteLoopTest" duration-ms="22" started-at="2021-04-27T07:52:07 IST" finished-at="2021-04-27T07:52:07 IST">
+          <exception class="org.testng.internal.thread.ThreadTimeoutException">
+            <message>
+              <![CDATA[Method TestNGAnnotations.TestNGInvocationTimeOutTest.infiniteLoopTest() didn't finish within the time-out 2]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.thread.ThreadTimeoutException: Method TestNGAnnotations.TestNGInvocationTimeOutTest.infiniteLoopTest() didn't finish within the time-out 2
+at org.testng.internal.MethodInvocationHelper.invokeWithTimeoutWithNewExecutor(MethodInvocationHelper.java:371)
+at org.testng.internal.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:282)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:605)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.thread.ThreadTimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- infiniteLoopTest -->
+      </class> <!-- TestNGAnnotations.TestNGInvocationTimeOutTest -->
+      <class name="TestNGAnnotations.TestNGDiffAnnoWithGroupTestCases">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:TestNGAnnotations.TestNGDiffAnnoWithGroupTestCases@6ebc05a6]" name="beforeSuite" is-config="true" duration-ms="0" started-at="2021-04-27T07:52:06 IST" finished-at="2021-04-27T07:52:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:TestNGAnnotations.TestNGDiffAnnoWithGroupTestCases@6ebc05a6]" name="beforeTest" is-config="true" duration-ms="1" started-at="2021-04-27T07:52:06 IST" finished-at="2021-04-27T07:52:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:TestNGAnnotations.TestNGDiffAnnoWithGroupTestCases@6ebc05a6]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-04-27T07:52:06 IST" finished-at="2021-04-27T07:52:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:TestNGAnnotations.TestNGDiffAnnoWithGroupTestCases@6ebc05a6]" name="beforeClass" is-config="true" duration-ms="0" started-at="2021-04-27T07:52:06 IST" finished-at="2021-04-27T07:52:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="test2()[pri:1, instance:TestNGAnnotations.TestNGDiffAnnoWithGroupTestCases@6ebc05a6]" name="test2" duration-ms="0" started-at="2021-04-27T07:52:06 IST" finished-at="2021-04-27T07:52:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:TestNGAnnotations.TestNGDiffAnnoWithGroupTestCases@6ebc05a6]" name="afterMethod" is-config="true" duration-ms="0" started-at="2021-04-27T07:52:06 IST" finished-at="2021-04-27T07:52:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:TestNGAnnotations.TestNGDiffAnnoWithGroupTestCases@6ebc05a6]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-04-27T07:52:06 IST" finished-at="2021-04-27T07:52:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="test1()[pri:2, instance:TestNGAnnotations.TestNGDiffAnnoWithGroupTestCases@6ebc05a6]" name="test1" duration-ms="1" started-at="2021-04-27T07:52:06 IST" finished-at="2021-04-27T07:52:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:TestNGAnnotations.TestNGDiffAnnoWithGroupTestCases@6ebc05a6]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-04-27T07:52:06 IST" finished-at="2021-04-27T07:52:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:TestNGAnnotations.TestNGDiffAnnoWithGroupTestCases@6ebc05a6]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-04-27T07:52:06 IST" finished-at="2021-04-27T07:52:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="test3()[pri:3, instance:TestNGAnnotations.TestNGDiffAnnoWithGroupTestCases@6ebc05a6]" name="test3" duration-ms="1" started-at="2021-04-27T07:52:06 IST" finished-at="2021-04-27T07:52:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:TestNGAnnotations.TestNGDiffAnnoWithGroupTestCases@6ebc05a6]" name="afterMethod" is-config="true" duration-ms="0" started-at="2021-04-27T07:52:07 IST" finished-at="2021-04-27T07:52:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:TestNGAnnotations.TestNGDiffAnnoWithGroupTestCases@6ebc05a6]" name="afterClass" is-config="true" duration-ms="6" started-at="2021-04-27T07:52:07 IST" finished-at="2021-04-27T07:52:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:TestNGAnnotations.TestNGDiffAnnoWithGroupTestCases@6ebc05a6]" name="afterTest" is-config="true" duration-ms="1" started-at="2021-04-27T07:52:07 IST" finished-at="2021-04-27T07:52:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:TestNGAnnotations.TestNGDiffAnnoWithGroupTestCases@6ebc05a6]" name="afterSuite" is-config="true" duration-ms="1" started-at="2021-04-27T07:52:07 IST" finished-at="2021-04-27T07:52:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- TestNGAnnotations.TestNGDiffAnnoWithGroupTestCases -->
+      <class name="TestNGAnnotations.TestNGDiffAnno">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:TestNGAnnotations.TestNGDiffAnno@551aa95a]" name="beforeSuite" is-config="true" duration-ms="8" started-at="2021-04-27T07:52:06 IST" finished-at="2021-04-27T07:52:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:TestNGAnnotations.TestNGDiffAnno@551aa95a]" name="beforeTest" is-config="true" duration-ms="0" started-at="2021-04-27T07:52:06 IST" finished-at="2021-04-27T07:52:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:TestNGAnnotations.TestNGDiffAnno@551aa95a]" name="beforeClass" is-config="true" duration-ms="1" started-at="2021-04-27T07:52:06 IST" finished-at="2021-04-27T07:52:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:TestNGAnnotations.TestNGDiffAnno@551aa95a]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-04-27T07:52:06 IST" finished-at="2021-04-27T07:52:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="test()[pri:0, instance:TestNGAnnotations.TestNGDiffAnno@551aa95a]" name="test" duration-ms="0" started-at="2021-04-27T07:52:06 IST" finished-at="2021-04-27T07:52:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:TestNGAnnotations.TestNGDiffAnno@551aa95a]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-04-27T07:52:06 IST" finished-at="2021-04-27T07:52:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:TestNGAnnotations.TestNGDiffAnno@551aa95a]" name="afterClass" is-config="true" duration-ms="0" started-at="2021-04-27T07:52:06 IST" finished-at="2021-04-27T07:52:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:TestNGAnnotations.TestNGDiffAnno@551aa95a]" name="afterTest" is-config="true" duration-ms="1" started-at="2021-04-27T07:52:07 IST" finished-at="2021-04-27T07:52:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:TestNGAnnotations.TestNGDiffAnno@551aa95a]" name="afterSuite" is-config="true" duration-ms="1" started-at="2021-04-27T07:52:07 IST" finished-at="2021-04-27T07:52:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- TestNGAnnotations.TestNGDiffAnno -->
+      <class name="TestNGAnnotations.TestNGDiffAnno2">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:TestNGAnnotations.TestNGDiffAnno2@35d176f7]" name="beforeSuite" is-config="true" duration-ms="0" started-at="2021-04-27T07:52:06 IST" finished-at="2021-04-27T07:52:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:TestNGAnnotations.TestNGDiffAnno2@35d176f7]" name="beforeTest" is-config="true" duration-ms="0" started-at="2021-04-27T07:52:06 IST" finished-at="2021-04-27T07:52:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:TestNGAnnotations.TestNGDiffAnno2@35d176f7]" name="beforeClass" is-config="true" duration-ms="0" started-at="2021-04-27T07:52:06 IST" finished-at="2021-04-27T07:52:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="test1()[pri:0, instance:TestNGAnnotations.TestNGDiffAnno2@35d176f7]" name="test1" duration-ms="1" started-at="2021-04-27T07:52:06 IST" finished-at="2021-04-27T07:52:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:TestNGAnnotations.TestNGDiffAnno2@35d176f7]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-04-27T07:52:06 IST" finished-at="2021-04-27T07:52:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:TestNGAnnotations.TestNGDiffAnno2@35d176f7]" name="afterMethod" is-config="true" duration-ms="0" started-at="2021-04-27T07:52:06 IST" finished-at="2021-04-27T07:52:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="test2()[pri:0, instance:TestNGAnnotations.TestNGDiffAnno2@35d176f7]" name="test2" duration-ms="1" started-at="2021-04-27T07:52:06 IST" finished-at="2021-04-27T07:52:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:TestNGAnnotations.TestNGDiffAnno2@35d176f7]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-04-27T07:52:06 IST" finished-at="2021-04-27T07:52:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:TestNGAnnotations.TestNGDiffAnno2@35d176f7]" name="afterMethod" is-config="true" duration-ms="0" started-at="2021-04-27T07:52:06 IST" finished-at="2021-04-27T07:52:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:TestNGAnnotations.TestNGDiffAnno2@35d176f7]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-04-27T07:52:06 IST" finished-at="2021-04-27T07:52:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="test3()[pri:0, instance:TestNGAnnotations.TestNGDiffAnno2@35d176f7]" name="test3" duration-ms="1" started-at="2021-04-27T07:52:06 IST" finished-at="2021-04-27T07:52:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:TestNGAnnotations.TestNGDiffAnno2@35d176f7]" name="afterMethod" is-config="true" duration-ms="0" started-at="2021-04-27T07:52:06 IST" finished-at="2021-04-27T07:52:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:TestNGAnnotations.TestNGDiffAnno2@35d176f7]" name="afterClass" is-config="true" duration-ms="0" started-at="2021-04-27T07:52:06 IST" finished-at="2021-04-27T07:52:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:TestNGAnnotations.TestNGDiffAnno2@35d176f7]" name="afterTest" is-config="true" duration-ms="0" started-at="2021-04-27T07:52:07 IST" finished-at="2021-04-27T07:52:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:TestNGAnnotations.TestNGDiffAnno2@35d176f7]" name="afterSuite" is-config="true" duration-ms="1" started-at="2021-04-27T07:52:07 IST" finished-at="2021-04-27T07:52:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- TestNGAnnotations.TestNGDiffAnno2 -->
+    </test> <!-- Regression Suite -->
+  </suite> <!-- Testing TestNG Features -->
+</testng-results>

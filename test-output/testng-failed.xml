@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Testing TestNG Features]">
+  <test thread-count="5" name="Regression Suite(failed)">
+    <classes>
+      <class name="TestNGAnnotations.TestNGDependsOnMethods">
+        <methods>
+          <include name="logInTest"/>
+          <include name="homePageTest"/>
+        </methods>
+      </class> <!-- TestNGAnnotations.TestNGDependsOnMethods -->
+      <class name="TestNGAnnotations.TestNGInvocationTimeOutTest">
+        <methods>
+          <include name="infiniteLoopTest"/>
+        </methods>
+      </class> <!-- TestNGAnnotations.TestNGInvocationTimeOutTest -->
+      <class name="TestNGAnnotations.TestNGExpectedException">
+        <methods>
+          <include name="expectedExceptions"/>
+        </methods>
+      </class> <!-- TestNGAnnotations.TestNGExpectedException -->
+    </classes>
+  </test> <!-- Regression Suite(failed) -->
+</suite> <!-- Failed suite [Testing TestNG Features] -->
